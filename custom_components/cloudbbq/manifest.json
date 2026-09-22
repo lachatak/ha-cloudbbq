@@ -1,0 +1,28 @@
+{
+  "domain": "cloudbbq",
+  "name": "CloudBBQ Thermometer",
+  "bluetooth": [
+    {
+      "service_uuid": "0000fff0-0000-1000-8000-00805f9b34fb",
+      "manufacturer_id": 89,
+      "local_name": "BBQ*"
+    }
+  ],
+  "codeowners": [
+    "@lachatak"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "bluetooth_adapters"
+  ],
+  "documentation": "https://github.com/lachatak/ha-cloudbbq",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/lachatak/ha-cloudbbq/issues",
+  "loggers": [
+    "custom_components.cloudbbq",
+    "bleak",
+    "bleak_retry_connector"
+  ],
+  "version": "0.2.0"
+}

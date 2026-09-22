@@ -1,0 +1,33 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "confirm": {
+        "title": "CloudBBQ Thermometer",
+        "description": "Set up {name} ({address})?\n\nHome Assistant will connect to it every 15 seconds to read the probe temperatures."
+      },
+      "user": {
+        "title": "CloudBBQ Thermometer",
+        "data": {
+          "address": "Device"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This thermometer is already set up.",
+      "no_devices_found": "No new CloudBBQ thermometer found. If yours is already set up, it will not be listed here — check Devices & Services. Otherwise switch it on and make sure it is in range of a Bluetooth adapter that supports connections (Shelly proxies forward advertisements only).",
+      "not_supported": "This device advertises the FFF0 service but does not look like an iBBQ thermometer."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "CloudBBQ Thermometer",
+        "description": "How many probe sockets does this unit have? The device always reports six, but entities are only created for the sockets you actually have.",
+        "data": {
+          "probes": "Number of probes"
+        }
+      }
+    }
+  }
+}
