@@ -23,3 +23,9 @@ jobs:
       - uses: hacs/action@main
         with:
           category: integration
+          # "brands" checks for an entry in home-assistant/brands, which is a
+          # requirement for inclusion in the HACS DEFAULT store, not for
+          # installing this as a custom repository. Ignored deliberately.
+          # Drop this line if you ever submit the icon PR to
+          # home-assistant/brands and apply for default listing.
+          ignore: brands
